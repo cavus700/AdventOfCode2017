@@ -33,3 +33,6 @@ ipch/*
 AdventOfCode.sdf
 .vs/*
 Build/*
+AdventOfCode/x64/*
+AdventOfCode/win32/*
+AdventOfCode.VC.db

@@ -84,31 +84,31 @@ int main(int argc, char** argv)
     AoCDay* aocday;
 
     switch (day) {
-    case 1: aocday = new Day1();
-    case 2: aocday = new Day2();
-    case 3: aocday = new Day3();
-    case 4: aocday = new Day4();
-    case 5: aocday = new Day5();
-    case 6: aocday = new Day6();
-    case 7: aocday = new Day7();
-    case 8: aocday = new Day8();
-    case 9: aocday = new Day9();
-    case 10: aocday = new Day10();
-    case 11: aocday = new Day11();
-    case 12: aocday = new Day12();
-    case 13: aocday = new Day13();
-    case 14: aocday = new Day14();
-    case 15: aocday = new Day15();
-    case 16: aocday = new Day16();
-    case 17: aocday = new Day17();
-    case 18: aocday = new Day18();
-    case 19: aocday = new Day19();
-    case 20: aocday = new Day20();
-    case 21: aocday = new Day21();
-    case 22: aocday = new Day22();
-    case 23: aocday = new Day23();
-    case 24: aocday = new Day24();
-    case 25: aocday = new Day25();
+    case 1: aocday = new Day1(); break;
+    case 2: aocday = new Day2(); break;
+    case 3: aocday = new Day3(); break;
+    case 4: aocday = new Day4(); break;
+    case 5: aocday = new Day5(); break;
+    case 6: aocday = new Day6(); break;
+    case 7: aocday = new Day7(); break;
+    case 8: aocday = new Day8(); break;
+    case 9: aocday = new Day9(); break;
+    case 10: aocday = new Day10(); break;
+    case 11: aocday = new Day11(); break;
+    case 12: aocday = new Day12(); break;
+    case 13: aocday = new Day13(); break;
+    case 14: aocday = new Day14(); break;
+    case 15: aocday = new Day15(); break;
+    case 16: aocday = new Day16(); break;
+    case 17: aocday = new Day17(); break;
+    case 18: aocday = new Day18(); break;
+    case 19: aocday = new Day19(); break;
+    case 20: aocday = new Day20(); break;
+    case 21: aocday = new Day21(); break;
+    case 22: aocday = new Day22(); break;
+    case 23: aocday = new Day23(); break;
+    case 24: aocday = new Day24(); break;
+    case 25: aocday = new Day25(); break;
     }
 	
 	start = chrono::high_resolution_clock::now();
