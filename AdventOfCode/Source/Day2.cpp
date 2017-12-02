@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Day2.h"
 #include <iterator>
+#include <algorithm>
 
 Day2::Day2()
 {
@@ -14,7 +15,6 @@ Day2::~Day2()
 void Day2::startA(vector<string> input)
 {
     istream_iterator<int> eof;
-    int max = numeric_limits<int>::min(); int min = numeric_limits<int>::max();
 
     int result = 0;
 
@@ -23,14 +23,8 @@ void Day2::startA(vector<string> input)
         istream_iterator<int> iter(istr);
         vector<int> row(iter, eof);
 
-        for (int num : row) {
-            max = num > max ? num : max;
-            min = num < min ? num : min;
-        }
-        result += max - min;
-
-        max = numeric_limits<int>::min(); 
-        min = numeric_limits<int>::max();
+        auto minmax = minmax_element(row.begin(), row.end());
+        result += *minmax.second - *minmax.first;
     }
 
     cout << "Checksum is: " << result << endl;
@@ -38,12 +32,11 @@ void Day2::startA(vector<string> input)
 
 void Day2::startB(vector<string> input)
 {
-    istream_iterator<int> eof;
-
     int result = 0;
     bool found = false;
 
-    for (string s : input) {
+    auto lambda = [&](string s) {
+        istream_iterator<int> eof;
         istringstream istr(s);
         istream_iterator<int> iter(istr);
         vector<int> row(iter, eof);
@@ -66,7 +59,9 @@ void Day2::startB(vector<string> input)
                 break;
             }
         }
-    }
+    };
+
+    for_each(input.begin(), input.end(), lambda);
 
     cout << "Checksum is: " << result << endl;
 }
