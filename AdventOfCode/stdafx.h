@@ -14,5 +14,6 @@
 #include <chrono>
 #include <memory>
 #include <iostream>
+#include <cmath>
 
 // TODO: reference additional headers your program requires here
