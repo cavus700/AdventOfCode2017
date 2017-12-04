@@ -15,5 +15,8 @@
 #include <memory>
 #include <iostream>
 #include <cmath>
+#include <unordered_map>
+#include <iterator>
+#include <algorithm>
 
 // TODO: reference additional headers your program requires here
