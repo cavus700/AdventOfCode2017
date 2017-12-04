@@ -13,7 +13,7 @@ Day3::~Day3()
 
 void Day3::startA(vector<string> input)
 {
-	/*int number = stoi(input[0]);
+	int number = stoi(input[0]);
 	int ring = 1;
 	int elements = 9;
 	int elementsOnRing = 8;
@@ -34,7 +34,7 @@ void Day3::startA(vector<string> input)
 	if (distanceToMiddleOfQuarter < 0)
 		distanceToMiddleOfQuarter *= -1;
 
-	cout << "Steps to port: " << distanceToMiddleOfQuarter + ring << endl;*/
+	cout << "Steps to port: " << distanceToMiddleOfQuarter + ring << endl;
 }
 
 typedef vector<vector<int>> field;
@@ -54,6 +54,8 @@ bool compute(int i, int j, field* arr, int &find) {
 	cummulative += (*arr)[i-1][j-1];
 	cummulative += (*arr)[i-1][j];
 
+    (*arr)[i][j] = cummulative;
+    
 	if (cummulative > find) {
 		cout << "Result: " << cummulative << endl;
 		return true;
@@ -70,9 +72,10 @@ void Day3::startB(vector<string> input)
 	int mid = size / 2 + 1;
 	(*arr)[mid][mid] = 1;
 	int layer = 1;
+    int startOffset = 0;
 
 	while (true) {
-		for (int i = mid; i >= mid - layer; i--) {
+		for (int i = mid + startOffset; i >= mid - layer; i--) {
 			if (compute(i, mid + layer, arr, number))
 				return;
 		}
@@ -88,11 +91,12 @@ void Day3::startB(vector<string> input)
 			if (compute(mid + layer, j, arr, number))
 				return;
 		}
-		for (int i = mid + layer; i > mid; i--) {
+		for (int i = mid + layer; i > mid + startOffset; i--) {
 			if (compute(i, mid + layer, arr, number))
 				return;
 		}
 		layer++;
+        startOffset++;
 	}
 	
 }
