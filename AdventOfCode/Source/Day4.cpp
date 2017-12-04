@@ -23,7 +23,6 @@ void Day4::startA(vector<string> input)
         istream_iterator<string> iter(istr);
         vector<string> passphrase(iter, eof);
         std::unordered_map<std::string, std::string> map;
-        string mapVal;
         
         for (string word : passphrase) {
             if (map[word] != "") {
