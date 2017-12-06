@@ -38,7 +38,27 @@ void Day6::startA(vector<string> input)
 
 void Day6::startB(vector<string> input)
 {
-	
+    istringstream istr(input[0]);
+    istream_iterator<int> iter(istr);
+    istream_iterator<int> eof;
+    vector<int> banks(iter, eof);
+    MemoryManager mgr(banks);
+    unordered_map<MemoryManager, int> map;
+
+    map[mgr] = mgr.getCycles();
+
+    while (true) {
+        mgr.cycle();
+
+        if (map[mgr] != 0) {
+            break;
+        }
+        else {
+            map[mgr] = mgr.getCycles();
+        }
+    }
+
+    cout << "Result: " << mgr.getCycles() - map[mgr] << endl;
 }
 
 MemoryManager::MemoryManager(vector<int> banks)
