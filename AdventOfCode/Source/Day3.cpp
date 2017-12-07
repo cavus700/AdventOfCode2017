@@ -66,7 +66,7 @@ bool compute(int i, int j, field* arr, int &find) {
 void Day3::startB(vector<string> input)
 {
 	int number = stoi(input[0]);
-	int size = sqrt(number);
+	int size = static_cast<int>(sqrt(number));
 	field* arr = new vector<vector<int>>(size, vector<int>(size, 0));
 
 	int mid = size / 2 + 1;
