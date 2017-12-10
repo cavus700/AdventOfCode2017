@@ -9,5 +9,8 @@ public:
 
     void startA(vector<string> a_input);
     void startB(vector<string> a_input);
+
+private:
+    void swap(int pos, int len, vector<int>& list);
 };
 
