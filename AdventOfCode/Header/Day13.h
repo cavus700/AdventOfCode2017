@@ -35,7 +35,7 @@ public:
 
     int getSeverityOfCurrentPos() {
         if ((*m_firewall)[m_position].first.size() > 0 && (*m_firewall)[m_position].first[0])
-            return m_position * (*m_firewall)[m_position].first.size();
+            return m_position * static_cast<int>((*m_firewall)[m_position].first.size());
         return 0;
     }
 

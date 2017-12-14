@@ -93,3 +93,48 @@ void Day10::startB(vector<string> input)
         cout << setw(2) << setfill('0') << hex << (int)c;
     cout << endl;
 }
+
+vector<unsigned char> Day10::knotHash(string s)
+{
+    vector<int> lengths;
+
+    for (char c : s)
+        lengths.push_back(c);
+
+    lengths.push_back(17);
+    lengths.push_back(31);
+    lengths.push_back(73);
+    lengths.push_back(47);
+    lengths.push_back(23);
+
+    int skip = 0;
+    int pos = 0;
+
+    vector<int> list(256);
+    iota(list.begin(), list.end(), 0);
+
+    for (int round = 0; round < 64; round++) {
+        for (int len : lengths) {
+            if (len > list.size())
+                continue;
+            swap(pos, len, list);
+
+            pos = (pos + len + skip++) % list.size();
+        }
+    }
+
+    vector<unsigned char> denseHash;
+    unsigned char tmpByte = static_cast<unsigned char>(list[0]);
+
+    for (int i = 1; i < 256; i++) {
+        if (i % 16 == 0) {
+            denseHash.push_back(tmpByte);
+            tmpByte = list[i];
+            continue;
+        }
+        tmpByte = tmpByte ^ static_cast<unsigned char>(list[i]);
+    }
+
+    denseHash.push_back(tmpByte);
+    return denseHash;
+}
