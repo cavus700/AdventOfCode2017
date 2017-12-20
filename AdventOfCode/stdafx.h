@@ -20,5 +20,6 @@
 #include <iterator>
 #include <algorithm>
 #include <numeric>
+#include <bitset>
 
 // TODO: reference additional headers your program requires here

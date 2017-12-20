@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "Day14.h"
 #include "Day10.h"
-#include <bitset>
 
 Day14::Day14()
 {
