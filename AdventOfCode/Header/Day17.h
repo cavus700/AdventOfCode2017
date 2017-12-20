@@ -7,7 +7,6 @@ public:
 	Day17();
 	~Day17();
 
-	void startA(vector<string> a_input);
-	void startB(vector<string> a_input);
+	void startA(vector<string> input);
+	void startB(vector<string> input);
 };
-

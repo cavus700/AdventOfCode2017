@@ -13,12 +13,12 @@ Day22::~Day22()
 
 }
 
-void Day22::startA(vector<string> a_input)
+void Day22::startA(vector<string> input)
 {
 	
 }
 
-void Day22::startB(vector<string> a_input)
+void Day22::startB(vector<string> input)
 {
 
 }

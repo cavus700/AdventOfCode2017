@@ -7,8 +7,8 @@ public:
     Day10();
     ~Day10();
 
-    void startA(vector<string> a_input);
-    void startB(vector<string> a_input);
+    void startA(vector<string> input);
+    void startB(vector<string> input);
 
     //For Day14
     vector<unsigned char> knotHash(string s);

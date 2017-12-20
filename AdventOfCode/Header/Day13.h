@@ -7,8 +7,8 @@ public:
 	Day13();
 	~Day13();
 
-	void startA(vector<string> a_input);
-	void startB(vector<string> a_input);
+	void startA(vector<string> input);
+	void startB(vector<string> input);
 };
 
 class Firewall {

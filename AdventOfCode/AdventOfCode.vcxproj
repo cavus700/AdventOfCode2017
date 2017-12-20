@@ -147,6 +147,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="..\input\Day1.txt" />
+    <Text Include="..\input\Day10.txt" />
+    <Text Include="..\input\Day11.txt" />
+    <Text Include="..\input\Day12.txt" />
+    <Text Include="..\input\Day13.txt" />
+    <Text Include="..\input\Day14.txt" />
+    <Text Include="..\input\Day15.txt" />
+    <Text Include="..\input\Day16.txt" />
+    <Text Include="..\input\Day17.txt" />
+    <Text Include="..\input\Day18.txt" />
+    <Text Include="..\input\Day19.txt" />
+    <Text Include="..\input\Day2.txt" />
+    <Text Include="..\input\Day20.txt" />
+    <Text Include="..\input\Day21.txt" />
+    <Text Include="..\input\Day22.txt" />
+    <Text Include="..\input\Day23.txt" />
+    <Text Include="..\input\Day24.txt" />
+    <Text Include="..\input\Day25.txt" />
+    <Text Include="..\input\Day3.txt" />
+    <Text Include="..\input\Day4.txt" />
+    <Text Include="..\input\Day5.txt" />
+    <Text Include="..\input\Day6.txt" />
+    <Text Include="..\input\Day7.txt" />
+    <Text Include="..\input\Day8.txt" />
+    <Text Include="..\input\Day9.txt" />
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>

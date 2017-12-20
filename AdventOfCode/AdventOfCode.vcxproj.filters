@@ -13,9 +13,87 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{43d16c38-d985-4ebf-9ed9-0c7185f07335}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="..\input\Day1.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day2.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day3.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day4.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day5.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day6.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day7.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day8.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day9.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day10.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day11.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day12.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day13.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day14.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day15.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day16.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day17.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day18.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day19.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day20.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day21.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day22.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day23.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day24.txt">
+      <Filter>Input</Filter>
+    </Text>
+    <Text Include="..\input\Day25.txt">
+      <Filter>Input</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
